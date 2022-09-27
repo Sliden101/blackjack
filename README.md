@@ -5,4 +5,4 @@ Black jack command line implementation in various languages...
 - [ ] Rust
 - [ ] C++
 - [ ] Bash
-+ More !
+and More !
