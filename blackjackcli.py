@@ -26,6 +26,7 @@ print('Welcome to Blackjack!')
 print('Rules: You play against the dealer.\nYou start with two cards.\n You can hit as many times as you want.\n If you go over 21, you lose.\n If you get 21, you win.\n If you get a higher value than the dealer without going over 21, you win.\n If you get a lower value than the dealer without going over 21, you lose.\n If you get the same value as the dealer, you lose.\n')
 print("Your hand: " + str(playerHand))
 choice = str(input('Hit or stand? '))
+choice.lower()
 def stand():
     global playerValue
     global playerHand
@@ -64,6 +65,7 @@ def hit():
         print("You lose!")
         quit()
     choice = str(input('Hit or stand? '))
+    choice.lower()
     if choice == 'hit':
         hit()
     else:
